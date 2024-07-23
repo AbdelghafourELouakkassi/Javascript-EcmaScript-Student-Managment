@@ -1,0 +1,25 @@
+{
+  "Students": [
+    {
+      "id": "1",
+      "name": "khalid",
+      "lastName": "khadiri",
+      "age": "2000-07-21",
+      "note": "15"
+    },
+    {
+      "id": "3",
+      "name": "karim",
+      "lastName": "fadili",
+      "age": "2002-06-21",
+      "note": "12"
+    },
+    {
+      "id": 4,
+      "name": "hakim",
+      "lastName": "elouakassi",
+      "age": "2005-06-22",
+      "note": "17"
+    }
+  ]
+}

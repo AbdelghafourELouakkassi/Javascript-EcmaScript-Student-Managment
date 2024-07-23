@@ -1,0 +1,177 @@
+body {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+h1 {
+  text-align: center;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+}
+span button {
+  background-color: whitesmoke;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+th {
+  background-color: rgb(50, 50, 50);
+  color: aliceblue;
+  padding: 10px;
+}
+
+table,
+td {
+  padding: 10px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 1rem;
+  border: 1px solid;
+}
+.delete,
+.update {
+  color: black;
+  padding-inline: 1rem;
+  padding-block: 0.3rem;
+  border: wpx solid black;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.delete {
+  background-color: aliceblue;
+}
+.update {
+  background-color: skyblue;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+form input {
+  text-align: center;
+  width: 11.4%;
+}
+form button {
+  background-color: black;
+  border: 1px solid;
+  color: aliceblue;
+  padding-inline: 40px;
+  padding-block: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.updateForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#Update-Student-form {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 2px 2px 4px 4px;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+#Update-Student-form input {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 60%;
+}
+#Update-Student-form input:placeholder-shown {
+  text-align: center;
+}
+
+.close-updateStudent-form {
+  cursor: pointer;
+  font-size: 3rem;
+  display: flex;
+  align-self: self-end;
+  margin-top: -25px;
+}
+
+span.green {
+  background-color: green;
+  color: aliceblue;
+}
+span.red {
+  background-color: red;
+  color: aliceblue;
+}
+span.red,
+span.green {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.SearchByNameInputDiv {
+  display: flex;
+  gap: 1rem;
+  width: 300px;
+  height: 20px;
+  padding: 0.6rem;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.SearchByNameInputDiv .searchInput {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  padding: inherit;
+  border: inherit;
+  border-radius: inherit;
+}
+
+.SearchByNameInputDiv .searchBtn {
+  position: absolute;
+  background-color: skyblue;
+  right: 15px;
+  top: 5px;
+  padding-inline: 0.9rem;
+  padding-block: 0.3rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}

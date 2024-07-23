@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>Students Managments oop EcmaScript</title>
+  </head>
+  <body>
+      <h1>Students List</h1>
+
+      <form method="post" id="Add-New-Student">
+        <input type="text" id="name" placeholder="name" required>
+        <input type="text" id="lastName" placeholder="lastName" required>
+        <input type="date" id="age" placeholder="age" required>
+        <input type="number" max="20" min="0" step="0.1" id="note" placeholder="note" required>
+        <button >Add Student</button>
+      </form>
+
+      <div class="updateForm">
+        <form method="post" id="Update-Student-form" >
+          <div class="close-updateStudent-form">x</div>
+          <input type="text" id="update-name" placeholder="name" required>
+          <input type="text" id="update-lastName" placeholder="lastName" required>
+          <input type="date" id="update-age" placeholder="age" required>
+          <input type="number" max="20" min="0" step="0.1" id="update-note" placeholder="new note" required>
+          <button >Update Student</button>
+        </form>
+      </div>
+      
+      <div class="SearchByNameInputDiv">
+        <input type="text" class="searchInput" placeholder="Student Name...">
+        <button class="searchBtn" disabled>Search</button>
+        </div>
+        
+      <span><button id="Refresh-Students-List">Refresh Students List</button></span>
+      <div  >
+        <table style="overflow:auto;">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>Name</th>
+              <th>LasName</th>
+              <th>Age</th>
+              <th>Note</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            
+            
+          </tbody>
+        </table>
+      </div>
+    
+      <script src="./js/main.js" defer type="module"></script>
+  </body>
+</html>
